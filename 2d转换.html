@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <style>
+        .box {
+            width: 600px;
+            height: 500px;
+            background-color: pink;
+			margin:0 auto;
+        }
+		.cls{
+			width:300px;
+			height:300px;
+			background-color: green;
+			margin:0 auto;
+			font-size:100px;
+			font-family: 全新硬笔行书简;
+			text-align: center;
+		}
+		.box:hover .cls{
+			/*横坐标，纵坐标*/
+			/*transform: translate(100px,100px);*/
+			/*旋转*/
+			transform: rotate(30deg);
+			/*缩小和放大,宽度为原来的0.2，盖度为原来的2倍*/
+			/*transform: scale(0.2,2);*/
+			/*沿着x轴的方向倾斜了30度，也沿着Y轴倾斜了30度*/
+			/*transform: skew(30deg,30deg);*/
+		}
+    </style>
+</head>
+
+<body>
+    <div class="box">
+		<div class="cls">帅</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>title</title>
+		<style>
+			div{
+				width:300px;
+				height:200px;
+				border:20px solid red;
+			}
+			/*p后面所有的ul*/
+			p~ul{
+				background-color: green;
+			}
+			/*具有href属性，并且以E开头*/
+			a[href^="E"]{
+				color:#FFF;
+				background-color: black;
+			}
+			/*具有href属性，并且值以mp4结尾*/
+			a[href$="mp4"]{
+				background-color: blue;
+			}
+			
+			a[href*="l"]{
+				background-color: red;
+			}
+		</style>
+    </head>
+    <body>
+		<div>
+			<p>我是一名大学本科生</p>
+			<ul>
+				<li><a href="panama">fsaf</a></li>
+				<li><a href="eanamal">fasgs</a></li>
+				<li><a href="Eanama">fasgs</a></li>
+				<li><a href="panama.mp4">gadgdsf</a></li>
+			</ul>
+		</div>
+    </body>
+</html>

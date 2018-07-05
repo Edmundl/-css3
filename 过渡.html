@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+			/*写了什么属性，就是对应的这个属性有这种过渡效果*/
+			transition-property: all;
+			transition-delay: 0.4s;/*延时时间*/
+			transition-duration: 2s;/*过渡时间*/
+			transition-timing-function: linear;
+        }
+		.box:hover{
+			width:500px;
+			height:200px;
+		}
+    </style>
+</head>
+
+<body>
+    <div class="box">
+	</div>
+</body>
+
+</html>

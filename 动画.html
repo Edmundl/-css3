@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <style>
+        .box {
+            width: 0;
+            height: 0;
+            /*四个边框*/
+			border-left:100px dashed red;
+			border-top:100px dashed green;
+			border-right:100px dashed blue;
+			border-bottom:100px dashed orange;
+			border-radius: 50%;
+			/*使用动画及集名字*/
+			animation-name:rotate;
+			animation-duration: 2s;/*秒数*/
+			animation-iteration-count: 2;/*设置动画执行的次数,infinite是无限次数*/
+			animation-timing-function: linear;/*设置匀速*/
+			animation-direction: alternate;/*动画逆播*/
+			animation-delay: 1s;/*页面刷新后的延时*/
+			animation-fill-mode: forwards;/*动画结束了，但是不能无限次*/
+        }
+		.box:hover{
+			animation-play-state: paused;/*鼠标进入就停止动画*/
+		}
+		/*定义一个动画集*/
+		/*@keyframes动画集名字*/
+		@keyframes rotate{
+			from{
+				transform: rotateZ(0deg);
+			}to{
+				transform: rotateZ(360deg);
+			}
+		}
+		@keyframes a{
+			0{
+				transform: rotateZ(0deg);
+			}
+			60{
+				transform: rotateZ(360deg);
+			}
+		}
+    </style>
+</head>
+
+<body>
+    <div class="box">
+	</div>
+</body>
+
+</html>
